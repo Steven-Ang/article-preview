@@ -1,26 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <title>Frontend Mentor | Article preview component</title>
-  <link rel="stylesheet" href="reset.css">
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Article preview component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="article-image-container"></div>
+      <article>
+        <div class="content">
+          <h2 class="article-heading">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+          <p class="article-description">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <section class="article-footer">
+          <div class="left">
+            <div class="author-container">
+              <img
+                src="images/avatar-michelle.jpg"
+                alt="Michelle"
+                class="author-avatar"
+              />
+              <div class="author-attributes-container">
+                <p class="author-name">Michelle Appleton</p>
+                <p class="publish-date">28 Jun 2020</p>
+              </div>
+            </div>
 
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
+            <div class="icons-container hidden">
+              <p class="share-text">Share</p>
+              <img
+                class="icon social-icon"
+                src="images/icon-facebook.svg"
+                alt="Share icon"
+              />
+              <img
+                class="icon social-icon"
+                src="images/icon-twitter.svg"
+                alt="Share icon"
+              />
+              <img
+                class="icon social-icon"
+                src="images/icon-pinterest.svg"
+                alt="Share icon"
+              />
+            </div>
+          </div>
+          <div class="right">
+            <button class="icon share-icon">
+              <img src="images/icon-share.svg" alt="Share icon" />
+            </button>
+          </div>
+        </section>
+      </article>
+    </div>
 
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  <script src="main.js"></script>
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
